@@ -6,8 +6,12 @@ module Model
     attrs.each_pair { |k, v| send("#{k}=", v) }
   end
 
-  def self.included(base)
-    def base.attribute(name, options = {})
+  def attributes
+    Hash[instance_variables.map { |name| [name[1..].to_sym, instance_variable_get(name)] }]
+  end
+
+  module ClassMethods
+    def attribute(name, options = {})
       define_method name do
         instance_variable_get "@#{name}"
       end
@@ -18,23 +22,19 @@ module Model
       end
     end
 
-    def base.coerce(data, type)
-      str = data.to_s
+    def coerce(data, type)
+      value = data.to_s
       case type
-      when :string then str.to_s
-      when :integer then str.to_i
-      when :boolean then str.to_b
-      when :datetime then DateTime.parse(str)
+      when :string then value.to_s
+      when :integer then value.to_i
+      when :boolean then value.to_b
+      when :datetime then DateTime.parse(value)
       end
-    end
-
-    class << base
-      private :attribute
     end
   end
 
-  def attributes
-    Hash[instance_variables.map { |name| [name[1..].to_sym, instance_variable_get(name)] }]
+  def self.included(base)
+    base.extend ClassMethods
   end
 end
 
