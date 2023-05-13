@@ -1,0 +1,10 @@
+---
+bulletin1:
+  body: |
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut dolorum doloribus dolores dolor maxime, voluptas eveniet voluptatibus a atque consectetur odit nihil minima nulla rem, doloremque recusandae ex perferendis animi.
+    Qui nemo, atque soluta dolore, nisi iste nulla esse aliquid tempora quo, et sint molestiae? Quas animi exercitationem eligendi doloremque aperiam soluta blanditiis debitis iusto libero, modi quae ipsa commodi!
+  title: First
+bulletin2:
+  body: |
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor delectus itaque, aspernatur est eveniet incidunt dolorem reprehenderit ea vitae magni dolorum accusantium dignissimos perspiciatis culpa fuga? Cupiditate fugiat accusantium vel.
+  title: Second
