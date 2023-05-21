@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title CRUD
+    meta name="keywords" content="template language"
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    = stylesheet_link_tag 'application', 'data-turbo-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbo-track': 'reload', defer: true
+
+  body.position-relative
+    = render partial: 'layouts/toast', locals: { flash: }
+    nav
+      ul
+        li = link_to 'Tasks', root_path
+    div.px-4
+      = yield

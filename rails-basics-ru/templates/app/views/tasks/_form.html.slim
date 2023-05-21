@@ -1,0 +1,35 @@
+= form_for task do |f|
+  div.mb-2.form-group
+    = f.label :name, class: 'form-label'
+    = f.text_field :name, class: "form-control #{task.errors[:name].present? ? 'is-invalid' : ''}"
+    - if task.errors[:name].present?
+      div.invalid-feedback
+        = task.errors[:name].join(' ')
+  div.mb-2.form-check
+    = f.label :completed, class: 'form-check-label'
+    = f.check_box :completed, class: 'form-check-input'
+  div.mb-2.form-group
+    = f.label :status, class: 'form-label'
+    = f.text_field :status, class: "form-control #{task.errors[:status].present? ? 'is-invalid' : ''}"
+    - if task.errors[:status].present?
+      div.invalid-feedback
+        = task.errors[:status].join(' ')
+  div.mb-2.form-group
+    = f.label :creator, class: 'form-label'
+    = f.text_field :creator, class: "form-control #{task.errors[:creator].present? ? 'is-invalid' : ''}"
+    - if task.errors[:creator].present?
+      div.invalid-feedback
+        = task.errors[:creator].join(' ')
+  div.mb-2.form-group
+    = f.label :performer, class: 'form-label'
+    = f.text_field :performer, class: "form-control #{task.errors[:performer].present? ? 'is-invalid' : ''}"
+    - if task.errors[:performer].present?
+      div.invalid-feedback
+        = task.errors[:performer].join(' ')
+  div.mb-2.form-group
+    = f.label :description, class: 'form-label'
+    = f.text_area :description, class: "form-control #{task.errors[:description].present? ? 'is-invalid' : ''}"
+    - if task.errors[:description].present?
+      div.invalid-feedback
+        = task.errors[:description].join(' ')
+  = f.submit nil, class: 'btn btn-primary my-3'

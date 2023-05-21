@@ -1,0 +1,6 @@
+div.row.align-items-baseline
+  div.col-12.col-md-10
+    h1.mb-3 Tasks
+  div.col-12.col-md-2.text-end
+    = link_to 'New', new_task_path, class: 'text-success'
+= render partial: 'task', collection: @tasks

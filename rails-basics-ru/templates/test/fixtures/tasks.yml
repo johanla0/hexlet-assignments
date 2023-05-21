@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: <%= Faker::Book.title %>
+  description: <%= Faker::Hipster.paragraph %>
+  status: <%= Faker::Hipster.word %>
+  creator: <%= Faker::Book.author %>
+  performer: <%= Faker::Artist.name %>
+  completed: <%= [true, false].sample %>
+
+two:
+  name: <%= Faker::Book.title %>
+  description: <%= Faker::Hipster.paragraph %>
+  status: <%= Faker::Hipster.word %>
+  creator: <%= Faker::Book.author %>
+  performer: <%= Faker::Artist.name %>
+  completed: <%= [true, false].sample %>
