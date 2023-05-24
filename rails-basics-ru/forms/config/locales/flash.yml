@@ -1,0 +1,9 @@
+---
+en:
+  flash:
+    create:
+      success: Created successfully
+    update:
+      success: Updated successfully
+    destroy:
+      success: Deleted successfully

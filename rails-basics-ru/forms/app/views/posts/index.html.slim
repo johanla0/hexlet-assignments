@@ -1,0 +1,6 @@
+div.row.align-items-baseline
+  div.col-12.col-md-10
+    h1.mb-3 = t('posts')
+  div.col-12.col-md-2.text-end
+    = link_to t('new'), new_post_path, class: 'text-success'
+= render partial: 'post', collection: @posts
