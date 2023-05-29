@@ -6,3 +6,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+5.times do
+  Post.create(
+    title: Faker::Book.title,
+    body: Faker::Hipster.paragraph
+  )
+end
+
+3.times do
+  PostComment.create(
+    body: Faker::Hipster.paragraph,
+    post: Post.all.sample
+  )
+end
