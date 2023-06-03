@@ -4,8 +4,6 @@ ru:
     comments:
       create:
         success: Комментарий создан.
-      destroy:
-        success: Комментарий удален.
       edit:
         title: Изменить комментарий
       update:

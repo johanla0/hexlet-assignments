@@ -1,7 +1,8 @@
 = content_for :title do
   = t('posts.new')
 
-== render 'form', post: @post
+.new_post
+  == render 'form', post: @post
 
 hr
 

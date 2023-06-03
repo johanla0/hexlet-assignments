@@ -33,7 +33,8 @@ en:
   destroy: Delete
   destroy_confirmation: Are you sure?
   edit: Edit
-  hexlet_title: © Hexlet, %{year}
   hexlet_logo: Hexlet logo
-  home: Home page
+  hexlet_title: © Hexlet, %{year}
+  home: Home
+  home_page: Home page
   show: Show
