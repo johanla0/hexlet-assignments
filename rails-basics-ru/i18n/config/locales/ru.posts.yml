@@ -15,13 +15,13 @@ ru:
       other: '%{count} комментариев'
       zero: нет комментариев
     create:
-      success: Сообщение создано
+      success: Пост создан
     destroy:
-      success: Сообщение удалено
-    new_post: Создать сообщение
+      success: Пост удален
+    new: Новый пост
     post_name: Название
     show:
       body: Содержимое
-    title: Сообщения
+    title: Посты
     update:
-      success: Сообщение обновлено
+      success: Пост обновлен

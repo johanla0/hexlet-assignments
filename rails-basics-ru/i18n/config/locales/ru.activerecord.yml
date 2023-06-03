@@ -2,14 +2,14 @@ ru:
   activerecord:
     models:
       # BEGIN
-      
+      post: пост
       # END
       post/comment: Комментарий
 
     attributes:
       post:
         # BEGIN
-        
+
         # END
       post/comment:
         body: Содержание
@@ -19,5 +19,5 @@ ru:
         post:
           attributes:
             # BEGIN
-            
+
             # END

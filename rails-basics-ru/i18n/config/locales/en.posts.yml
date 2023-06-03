@@ -16,7 +16,7 @@ en:
       success: Post was created
     destroy:
       success: Post was removed
-    new_post: New post
+    new: New post
     post_name: Post name
     show:
       body: Content
