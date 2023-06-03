@@ -7,9 +7,9 @@ ru:
     attributes:
       post:
         title: Название
-        body: Содержание
+        body: Текст
       post/comment:
-        body: Содержание
+        body: Текст
 
     errors:
       models:
