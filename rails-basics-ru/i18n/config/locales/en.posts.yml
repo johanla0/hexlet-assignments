@@ -3,23 +3,28 @@ en:
   posts:
     comments:
       create:
-        success: Comment was created
+        success: Comment was created.
+      destroy:
+        success: Comment was destroyed.
       edit:
         title: Editing comment
       update:
-        success: Comment was updated
+        success: Comment was updated.
     comments_count:
       one: 1 comment
       other: '%{count} comments'
       zero: No comments
     create:
-      success: Post was created
+      success: Post was created.
     destroy:
-      success: Post was removed
-    new: New post
+      success: Post was destroyed.
+    edit:
+      title: Edit
+    new: New Post
     post_name: Post name
     show:
       body: Content
+      comments: Comments
     title: Posts
     update:
-      success: Post was updated
+      success: Post was updated.

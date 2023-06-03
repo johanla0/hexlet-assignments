@@ -3,11 +3,13 @@ ru:
   posts:
     comments:
       create:
-        success: Комментарий создан
+        success: Комментарий создан.
+      destroy:
+        success: Комментарий удален.
       edit:
         title: Изменить комментарий
       update:
-        success: Комментарий обновлен
+        success: Комментарий обновлен.
     comments_count:
       few: '%{count} комментария'
       many: '%{count} комментариев'
@@ -15,13 +17,16 @@ ru:
       other: '%{count} комментариев'
       zero: нет комментариев
     create:
-      success: Пост создан
+      success: Пост создан.
     destroy:
-      success: Пост удален
+      success: Пост удален.
+    edit:
+      title: Редактировать
     new: Новый пост
     post_name: Название
     show:
       body: Содержимое
+      comments: Комментарии
     title: Посты
     update:
-      success: Пост обновлен
+      success: Пост обновлен.

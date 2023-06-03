@@ -4,6 +4,7 @@ ru:
   destroy: Удалить
   destroy_confirmation: Вы уверены?
   edit: Редактировать
-  hexlet_title: '© Хекслет, %{year}'
-  home: Домой
+  hexlet_title: © Хекслет, %{year}
+  hexlet_logo: Хекслет логотип
+  home: Домашняя страница
   show: Открыть
