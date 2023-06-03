@@ -1,15 +1,25 @@
+---
 en:
   posts:
-    # BEGIN
-    
-    # END
-
     comments:
+      create:
+        success: Comment was created
       edit:
         title: Editing comment
-
-      create:
-        success: Comment was created.
-
       update:
-        success: Comment was updated.
+        success: Comment was updated
+    comments_count:
+      one: 1 comment
+      other: '%{count} comments'
+      zero: No comments
+    create:
+      success: Post was created
+    destroy:
+      success: Post was removed
+    new_post: New post
+    post_name: Post name
+    show:
+      body: Content
+    title: Posts
+    update:
+      success: Post was updated

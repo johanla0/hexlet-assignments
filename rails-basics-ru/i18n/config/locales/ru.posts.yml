@@ -1,16 +1,27 @@
 ---
 ru:
   posts:
-    # BEGIN
-    
-    # END
-
     comments:
+      create:
+        success: Комментарий создан
       edit:
         title: Изменить комментарий
-
-      create:
-        success: Комментарий создан.
-
       update:
-        success: Комментарий обновлен.
+        success: Комментарий обновлен
+    comments_count:
+      few: '%{count} комментария'
+      many: '%{count} комментариев'
+      one: 1 комментарий
+      other: '%{count} комментариев'
+      zero: нет комментариев
+    create:
+      success: Сообщение создано
+    destroy:
+      success: Сообщение удалено
+    new_post: Создать сообщение
+    post_name: Название
+    show:
+      body: Содержимое
+    title: Сообщения
+    update:
+      success: Сообщение обновлено
