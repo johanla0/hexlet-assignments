@@ -14,7 +14,10 @@ class Hacker
     def hack(email, password)
       uri = URI.parse(ROOT_PATH)
 
-      Net::HTTP.start(uri.host, uri.port, use_ssl: uri.scheme == 'https', verify_mode: OpenSSL::SSL::VERIFY_NONE) do |http|
+      Net::HTTP.start(uri.host,
+                      uri.port,
+                      use_ssl: uri.scheme == 'https',
+                      verify_mode: OpenSSL::SSL::VERIFY_NONE) do |http|
         request = Net::HTTP::Get.new uri.request_uri + GET_PATH
         response = http.request request
 
@@ -24,15 +27,12 @@ class Hacker
         cookie = response.response['set-cookie'].split('; ')[0]
 
         user = {
-          email: email,
-          password: password,
+          email:,
+          password:,
           password_confirmation: password
         }
 
-        params = {
-          authenticity_token: authenticity_token,
-          user: user
-        }
+        params = { authenticity_token:, user: }
 
         request = Net::HTTP::Post.new uri.request_uri + POST_PATH
         request.body = URI.encode_www_form(params)
@@ -40,7 +40,7 @@ class Hacker
 
         response = http.request request
 
-        puts response.code
+        # puts response.code
       end
     end
   end
