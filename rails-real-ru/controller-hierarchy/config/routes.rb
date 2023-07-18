@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     resources :movies do
       scope module: :movies do
         resources :comments, except: %i[show]
-        resources :reviews
+        resources :reviews, except: %i[show]
       end
     end
     # END
